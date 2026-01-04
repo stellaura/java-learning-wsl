@@ -6,37 +6,40 @@ public class Ujsag {
 
 public Ujsag(String megnevezes, String kiado, double ar){
 
-  this.megnevezes = megnevezes;
-  this.kiado = kiado;
-  this.ar = ar;
+  setMegnevezes(megnevezes);
+  setKiado(kiado);
+  setAr(ar);
 
 }
-
-// getter & setter for megnevezes
+ 
 public String getMegnevezes(){
   return this.megnevezes;
 }
 
 public void setMegnevezes(String megnevezes){
-  this.megnevezes = megnevezes;
+  if(megnevezes == null || megnevezes.isBlank()){
+    throw new IllegalArgumentException("A megnevezés nem lehet üres!");
+  } this.megnevezes = megnevezes;
 }
 
-// getter & setter for kiado
 public String getKiado(){
   return this.kiado;
 }
 
 public void setKiado(String kiado){
-  this.kiado = kiado;
+    if(kiado == null || kiado.isBlank()){
+    throw new IllegalArgumentException("A kiadó nem lehet üres!");
+  } this.kiado = kiado;
 }
 
-// getter & setter for ar
 public double getAr(){
   return this.ar;
 }
 
 public void setAr(double ar){
-  this.ar = ar;
+  if(Double.isNaN(ar) || ar < 0){
+    throw new IllegalArgumentException("Érvénytelen ár!");
+  }this.ar = ar;
 }
 
 public double afaTartalomSzamitas(){

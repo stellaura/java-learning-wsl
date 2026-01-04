@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
 import java.io.File;
-import java.io.FileNotFoundException;
+//import java.io.FileNotFoundException;
 
 
 
@@ -18,9 +18,7 @@ public class CsvFeldolgozo {
 
     try(Scanner sc = new Scanner(new File(filePath))){
       while (sc.hasNextLine()){
-        // sor = egy sor a file-ból
         String sor = sc.nextLine();
-        // mezok tömbbe töltöm az elemeket, amiket "-" határol el
         String[] mezok = sor.split("-");
 
         String tipus = mezok[0];
