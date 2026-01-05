@@ -1,3 +1,5 @@
+package model;
+
 public class Napilap extends Ujsag{
 
   private int hetiMegjelenesSzam;
@@ -8,7 +10,7 @@ public class Napilap extends Ujsag{
   }
 
   @Override
-  protected int getHetiMegjelenesSzam(){
+  public int getHetiMegjelenesSzam(){
     return this.hetiMegjelenesSzam;
   }
 

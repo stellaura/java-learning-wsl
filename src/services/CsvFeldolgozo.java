@@ -1,3 +1,5 @@
+package services;
+import model.*;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
@@ -43,4 +45,5 @@ public class CsvFeldolgozo {
     }
     return lista;
   }
+
 }

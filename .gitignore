@@ -1,0 +1,13 @@
+# Bytecode / fordított fájlok
+/out/
+/*.class
+
+# OS fájlok
+.DS_Store
+Thumbs.db
+
+# IDE fájlok (VS Code)
+/.vscode/
+
+# Egyéb build / ideiglenes cucc
+*.log
