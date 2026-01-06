@@ -11,3 +11,7 @@ Thumbs.db
 
 # Egyéb build / ideiglenes cucc
 *.log
+
+# IntelliJ
+.idea
+java-learning-wsl.iml
